@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    './shared/base',
-    'eslint:recommended',
-    'eslint-config-standard',
-    'plugin:prettier/recommended',
+    "./shared/base",
+    "eslint:recommended",
+    "eslint-config-standard",
+    "plugin:prettier/recommended",
   ],
 };
