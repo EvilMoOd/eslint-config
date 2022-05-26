@@ -6,16 +6,16 @@ Mu ESLint config
 
 
 ```bash
-pnpm i eslint @mu/eslint-config -D
+pnpm i eslint @evilmu/eslint-config-common -D
 ```
 
 ### Notice
 
 - 项目需要 `pnpm add eslint prettier -D` (due to peerDepencies)
 
-- 配置 prettierc
+- 配置 prettierrc
 
-  .prettierc
+  .prettierrc
 
 ```json
 {
@@ -130,12 +130,4 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
   "exclude": ["node_modules"]
 }
 ```
-
-## Release
-
-use np
-
-```
-npm i -g np
-np --yolo --no-yarn
 ```

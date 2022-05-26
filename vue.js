@@ -1,15 +1,18 @@
 module.exports = {
   extends: [
-    'plugin:vue/recommended',
     require.resolve('./shared/base'),
-    require.resolve('eslint-config-standard'),
+    'plugin:vue/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:vue/vue3-essential',
+    'plugin:import/recommended',
+    'plugin:prettier/recommended',
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
-    'vue/no-v-html': 'off'
-  }
-}
+    'vue/no-v-html': 'off',
+  },
+};

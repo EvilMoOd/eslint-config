@@ -1,14 +1,15 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   extends: [
+    require.resolve('./shared/base'),
     'eslint:recommended',
     'plugin:vue/base',
     'plugin:vue/vue3-recommended',
     'plugin:vue/vue3-essential',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
     'plugin:prettier/recommended',
-    require.resolve('./shared/base'),
-    require.resolve('eslint-config-standard-with-typescript'),
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -32,4 +33,6 @@ module.exports = {
       },
     },
   ],
+  // 添加vue和@typescript-eslint插件，增强eslint的能力
+  plugins: ['vue', '@typescript-eslint'],
 };
