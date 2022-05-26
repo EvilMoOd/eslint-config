@@ -11,7 +11,7 @@ pnpm i eslint @evilmu/eslint-config-common -D
 
 ### Notice
 
-- 项目需要 `pnpm add eslint prettier -D` (due to peerDepencies)
+
 
 - 配置 prettierrc
 
@@ -43,15 +43,6 @@ pnpm i eslint @evilmu/eslint-config-common -D
 
 In `package.json`.
 
-### React
-
-```json
-{
-  "eslintConfig": {
-    "extends": ["@evilmu/common/react"]
-  }
-}
-```
 
 ### JS
 
@@ -63,24 +54,13 @@ In `package.json`.
 }
 ```
 
+
 ### Vue
 
 ```json
 {
   "eslintConfig": {
     "extends": ["@evilmu/common/vue"]
-  }
-}
-```
-
-### TS
-
-Need `tsconfig.json` presented and `typescript` installed as devDependencies.
-
-```json
-{
-  "eslintConfig": {
-    "extends": ["@evilmu/common/ts"]
   }
 }
 ```
@@ -93,6 +73,15 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
 {
   "eslintConfig": {
     "extends": ["@evilmu/common/vue-ts"]
+  }
+}
+```
+### React
+
+```json
+{
+  "eslintConfig": {
+    "extends": ["@evilmu/common/react"]
   }
 }
 ```
@@ -129,5 +118,4 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
   ],
   "exclude": ["node_modules"]
 }
-```
 ```

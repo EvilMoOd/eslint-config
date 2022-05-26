@@ -1,16 +1,14 @@
 var path = require('path');
 module.exports = {
   extends: [
-    require.resolve('./shared/base'),
+    './shared/base',
     'eslint:recommended',
+    'eslint-config-standard-with-typescript',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
     'prettier/react',
-    'plugin:import/recommended',
     'plugin:prettier/recommended',
   ],
-  parser: require.resolve('@typescript-eslint/parser'),
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2021, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module',

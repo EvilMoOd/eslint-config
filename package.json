@@ -1,6 +1,6 @@
 {
   "name": "@evilmu/eslint-config-common",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "description": "木自用eslint规范",
   "keywords": [
     "eslint"
@@ -25,20 +25,21 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
     "@typescript-eslint/eslint-plugin": "5.26.0",
     "@typescript-eslint/parser": "5.26.0",
-    "babel-eslint": "^10.0.3",
+    "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-standard": "^4.1.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-vue": "^9.0.1",
-    "eslint": "^8.16.0",
     "prettier": "^2.6.2"
   },
   "peerDependencies": {

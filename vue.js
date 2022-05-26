@@ -1,18 +1,20 @@
 module.exports = {
   extends: [
-    require.resolve('./shared/base'),
+    './shared/base',
+    'eslint:recommended',
+    'eslint-config-standard',
+    'plugin:vue/base',
     'plugin:vue/recommended',
-    'plugin:vue/vue3-recommended',
-    'plugin:vue/vue3-essential',
-    'plugin:import/recommended',
     'plugin:prettier/recommended',
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     sourceType: 'module',
   },
   rules: {
     'vue/no-v-html': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
   },
 };
