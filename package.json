@@ -1,6 +1,6 @@
 {
   "name": "@evilmu/eslint-config-common",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "木自用eslint规范",
   "keywords": [
     "eslint"

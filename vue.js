@@ -1,20 +1,21 @@
 module.exports = {
   extends: [
-    './shared/base',
-    'eslint:recommended',
-    'eslint-config-standard',
-    'plugin:vue/base',
-    'plugin:vue/recommended',
-    'plugin:prettier/recommended',
+    "./shared/base",
+    "eslint:recommended",
+    "eslint-config-standard",
+    "plugin:vue/base",
+    "plugin:vue/vue3-recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:prettier/recommended",
   ],
-  parser: 'vue-eslint-parser',
+  parser: "vue-eslint-parser",
   parserOptions: {
-    parser: '@babel/eslint-parser',
-    sourceType: 'module',
+    parser: "@babel/eslint-parser",
+    sourceType: "module",
   },
   rules: {
-    'vue/no-v-html': 'off',
-    'vue/singleline-html-element-content-newline': 'off',
-    'vue/multiline-html-element-content-newline': 'off',
+    "vue/no-v-html": "off",
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/multiline-html-element-content-newline": "off",
   },
 };
