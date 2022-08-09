@@ -1,11 +1,12 @@
-var path = require("path");
+const path = require("path");
 module.exports = {
   extends: [
     "./shared/base",
-    "eslint:recommended",
-    "eslint-config-standard-with-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base",
+    "airbnb-typescript/base",
     "plugin:react/recommended",
-    "prettier/react",
+    "plugin:react/jsx-runtime",
     "plugin:prettier/recommended",
   ],
   parser: "@typescript-eslint/parser",
@@ -22,6 +23,7 @@ module.exports = {
     "no-useless-escape": "off",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/no-empty-function": "off",
+    "import/extensions": "off",
     // "@typescript-eslint/camelcase": "never"
   },
   overrides: [

@@ -3,8 +3,9 @@ const path = require("path");
 module.exports = {
   extends: [
     "./shared/base",
-    "eslint:recommended",
-    "eslint-config-standard-with-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base",
+    "airbnb-typescript/base",
     "plugin:vue/base",
     "plugin:vue/vue3-recommended",
     "plugin:vue/vue3-essential",
@@ -26,7 +27,9 @@ module.exports = {
     "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "vue/singleline-html-element-content-newline": "off",
+    "vue/multi-word-component-names": "off",
     "vue/multiline-html-element-content-newline": "off",
+    "import/prefer-default-export": "off",
   },
   overrides: [
     {
