@@ -24,6 +24,8 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/no-empty-function": "off",
     "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "no-plusplus": "off",
     // "@typescript-eslint/camelcase": "never"
   },
   overrides: [

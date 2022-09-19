@@ -30,6 +30,7 @@ module.exports = {
     "vue/multi-word-component-names": "off",
     "vue/multiline-html-element-content-newline": "off",
     "import/prefer-default-export": "off",
+    "no-plusplus": "off",
   },
   overrides: [
     {
