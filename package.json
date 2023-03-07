@@ -1,6 +1,6 @@
 {
   "name": "@evilmu/eslint-config-common",
-  "version": "1.1.8",
+  "version": "2.0.0",
   "description": "木自用eslint规范",
   "keywords": [
     "eslint"
@@ -8,46 +8,37 @@
   "license": "UNLICENSED",
   "author": "mu",
   "files": [
-    "index.js",
     "react.js",
-    "vue.js",
-    "vue-ts.js",
-    "ts.js",
-    "shared"
+    "vue.js"
   ],
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js ."
   },
-  "eslintConfig": {
-    "extends": [
-      "./index.js"
-    ]
-  },
   "dependencies": {
-    "@babel/core": "^7.18.5",
-    "@babel/eslint-parser": "^7.18.2",
-    "@typescript-eslint/eslint-plugin": "5.28.0",
-    "@typescript-eslint/parser": "5.28.0",
-    "eslint": "^8.18.0",
+    "@typescript-eslint/eslint-plugin": "5.54.1",
+    "@typescript-eslint/parser": "5.54.1",
+    "eslint": "^8.35.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-n": "^15.2.3",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsonc": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-vue": "^9.1.1",
-    "prettier": "^2.7.1"
+    "eslint-plugin-vue": "^9.9.0",
+    "prettier": "^2.8.4"
   },
   "peerDependencies": {
-    "eslint": ">=5.0.0",
-    "prettier": ">=1.19.1"
+    "eslint": ">=8.0.0",
+    "prettier": ">=2.8.4"
   },
   "publishConfig": {
     "access": "public",

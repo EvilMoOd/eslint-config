@@ -1,6 +1,9 @@
 # eslint-config-mu
 
 Mu ESLint config
+木的项目代码自用规范
+vue参考Element-Plus
+react参考Ant-design
 
 ## Install
 
@@ -44,26 +47,7 @@ pnpm i eslint @evilmu/eslint-config-common -D
 In `package.json`.
 
 
-### JS
-
-```json
-{
-  "eslintConfig": {
-    "extends": ["@evilmu/common"]
-  }
-}
-```
-
-
 ### Vue
-
-```json
-{
-  "eslintConfig": {
-    "extends": ["@evilmu/common/vue"]
-  }
-}
-```
 
 ### Vue TS
 
@@ -72,7 +56,7 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
 ```json
 {
   "eslintConfig": {
-    "extends": ["@evilmu/common/vue-ts"]
+    "extends": ["@evilmu/common/vue"]
   }
 }
 ```
@@ -95,7 +79,12 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "sourceMap": false,
     "importHelpers": true,
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "removeComments": false,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
@@ -108,14 +97,21 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "src/**/*.js",
-    "tests/**/*.ts",
-    "tests/**/*.tsx",
-    "fec.config.js"
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue",
+    "**/*.js",
+    "test/**/*.ts",
+    "test/**/*.tsx",
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "**/dist",
+    "**/__tests__/**/*",
+    "**/gulpfile.ts",
+    "**/test-helper",
+    "packages/test-utils",
+    "**/*.md"
+  ]
 }
 ```
