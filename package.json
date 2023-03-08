@@ -1,6 +1,6 @@
 {
   "name": "@evilmu/eslint-config-common",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "木自用eslint规范",
   "keywords": [
     "eslint"
@@ -43,7 +43,7 @@
   "peerDependencies": {
     "eslint": ">=8.0.0",
     "prettier": ">=2.8.4",
-    "typescirpt": ">=4.0.0"
+    "typescript": ">=4.0.0"
   },
   "publishConfig": {
     "access": "public",
