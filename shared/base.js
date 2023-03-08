@@ -8,7 +8,7 @@ module.exports = {
     ws: true,
   },
   env: {
-    es2021: true,
+    es6: true,
     node: true,
     browser: true,
   },
