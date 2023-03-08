@@ -1,6 +1,6 @@
 {
   "name": "@evilmu/eslint-config-common",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "木自用eslint规范",
   "keywords": [
     "eslint"
@@ -15,7 +15,9 @@
   ],
   "main": "vue.js",
   "scripts": {
-    "lint": "eslint --ext .js ."
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix",
+    "lint:commit": "commitlint --from $(git merge-base origin/dev HEAD) --to HEAD > ./commit-lint.txt"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.54.1",

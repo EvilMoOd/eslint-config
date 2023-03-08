@@ -35,7 +35,6 @@ module.exports = {
         'no-undef': 'off',
       },
     },
-    ,
     {
       files: ['*.d.ts'],
       rules: {
@@ -119,8 +118,7 @@ module.exports = {
           },
         ],
       },
-    }
-
+    },
     {
       files: ['**/*.md/*.js', '**/*.md/*.ts'],
       rules: {
