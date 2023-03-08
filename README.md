@@ -46,12 +46,21 @@ pnpm i eslint @evilmu/eslint-config-common -D
 
 In `package.json`.
 
+### script
+
+
+```json
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix",
+    "lint:commit": "commitlint --from $(git merge-base origin/dev HEAD) --to HEAD > ./commit-lint.txt",
+```
 
 ### Vue
 
 ### Vue TS
 
 Need `tsconfig.json` presented and `typescript` installed as devDependencies.
+
 
 ```json
 {

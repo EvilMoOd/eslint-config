@@ -17,7 +17,42 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "import/no-duplicates": "off"
+      }
+    },
+    {
       files: ['*.ts', '*.vue'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
+    ,
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'import/no-duplicates': 'off',
+      },
+    },
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.vue'],
+        ecmaVersion: 'latest',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
       rules: {
         'no-undef': 'off',
       },
@@ -84,34 +119,7 @@ module.exports = {
           },
         ],
       },
-    },
-    {
-      files: ['*.d.ts'],
-      rules: {
-        'import/no-duplicates': 'off',
-      },
-    },
-    {
-      files: ['*.js'],
-      rules: {
-        '@typescript-eslint/no-var-requires': 'off',
-      },
-    },
-    {
-      files: ['*.vue'],
-      parser: 'vue-eslint-parser',
-      parserOptions: {
-        parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.vue'],
-        ecmaVersion: 'latest',
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-      rules: {
-        'no-undef': 'off',
-      },
-    },
+    }
 
     {
       files: ['**/*.md/*.js', '**/*.md/*.ts'],
