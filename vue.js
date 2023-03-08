@@ -252,9 +252,6 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'import/named': 'off',
 
-    // eslint-plugin-eslint-comments
-    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
-
     // unicorn
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
