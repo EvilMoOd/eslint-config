@@ -5,6 +5,7 @@
   "keywords": [
     "eslint"
   ],
+  "repository": "https://github.com/EvilMoOd/eslint-config.git",
   "license": "UNLICENSED",
   "author": "mu",
   "files": [
@@ -12,7 +13,7 @@
     "react.js",
     "vue.js"
   ],
-  "main": "index.js",
+  "main": "vue.js",
   "scripts": {
     "lint": "eslint --ext .js ."
   },
@@ -39,7 +40,8 @@
   },
   "peerDependencies": {
     "eslint": ">=8.0.0",
-    "prettier": ">=2.8.4"
+    "prettier": ">=2.8.4",
+    "typescirpt": ">=4.0.0"
   },
   "publishConfig": {
     "access": "public",
