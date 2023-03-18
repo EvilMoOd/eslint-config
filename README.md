@@ -84,43 +84,31 @@ Need `tsconfig.json` presented and `typescript` installed as devDependencies.
 ```json
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "jsx": "preserve",
-    "sourceMap": false,
-    "importHelpers": true,
+    "newLine": "LF",
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "strict": true,
     "allowJs": false,
     "noUnusedLocals": true,
-    "resolveJsonModule": true,
-    "removeComments": false,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "removeComments": false,
+    "useDefineForClassFields": false,
     "paths": {
       "@/*": ["src/*"]
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.vue",
-    "**/*.js",
-    "test/**/*.ts",
-    "test/**/*.tsx",
-  ],
-  "exclude": [
-    "node_modules",
-    "**/dist",
-    "**/__tests__/**/*",
-    "**/gulpfile.ts",
-    "**/test-helper",
-    "packages/test-utils",
-    "**/*.md"
-  ]
+  "include": [],
+  "exclude": []
 }
 ```
