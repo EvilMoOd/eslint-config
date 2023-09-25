@@ -23,22 +23,22 @@ pnpm i eslint @evilmu/eslint-config-common -D
 ```json
 {
   "printWidth": 100,
+  "singleQuote": true,
+  "proseWrap": "never",
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "auto",
+  // 下面是默认设置
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
-  "vueIndentScriptAndStyle": true,
-  "singleQuote": true,
+  "vueIndentScriptAndStyle": false,
   "quoteProps": "as-needed",
   "bracketSpacing": true,
-  "trailingComma": "es5", 
-  "jsxBracketSameLine": true,
+  "trailingComma": "es5",
   "jsxSingleQuote": false,
   "arrowParens": "always",
   "insertPragma": false,
-  "requirePragma": false,
-  "proseWrap": "never",
-  "htmlWhitespaceSensitivity": "ignore",
-  "endOfLine": "auto"
+  "requirePragma": false
 }
 ```
 
